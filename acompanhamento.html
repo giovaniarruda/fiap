@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Health Track</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light p-3">
+        <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" height="30"> Health Track
+            </a>
+            <button class="navbar-toggler d-md-none collapsed mb-3" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="col-12 col-md-5 col-lg-8 d-flex align-items-center justify-content-md-end mt-3 mt-md-0">
+            <div class="dropdown">
+                <button class="btn botoes dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                  Olá, Giovani
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="configuracoes.html">Configurações</a></li>
+                  <li><a class="dropdown-item" href="index.html">Sair</a></li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="treinos.html">
+                          <img src="img/treino.png" width="24" height="24" viewBox="0 0 24 24">
+                          <span class="ml-2">Treinos</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="refeicoes.html">
+                          <img src="img/refeicoes.png" width="24" height="24" viewBox="0 0 24 24">
+                          <span class="ml-2">Refeições</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="acompanhamento.html">
+                          <img src="img/acompanhamento.png" width="24" height="24" viewBox="0 0 24 24">
+                          <span class="ml-2 ativo">Acompanhamento</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="relatorios.html">
+                          <img src="img/relatorios.png" width="24" height="24" viewBox="0 0 24 24">
+                          <span class="ml-2">Relatórios</span>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4 dashboard">
+                <h1 class="h2">Acompanhamento</h1>
+                <p>Acompanhe seu progresso</p>
+                <div class="row">
+                    <div class="col-12 col-xl-12 mb-4 mb-lg-0">
+                        <div class="card">
+                            <h5 class="card-header titulos">Últimos acompanhamentos</h5>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Data</th>
+                                            <th scope="col">Idade</th>
+                                            <th scope="col">Peso</th>
+                                            <th scope="col">Ritmo cardíaco</th>
+                                            <th scope="col">IMC</th>
+                                            <th scope="col"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>23/06/2021</td>
+                                            <td>37</td>
+                                            <td>100 KG</td>
+                                            <td>80 BPM</td>
+                                            <td>39.2 KG/M² </td>
+                                            <td><a href="#" class="btn btn-sm botoes">Detalhes</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td>23/05/2021</td>
+                                            <td>37</td>
+                                            <td>116 KG</td>
+                                            <td>89 BPM</td>
+                                            <td>37.9 KG/M² </td>
+                                            <td><a href="#" class="btn btn-sm botoes">Detalhes</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td>23/04/2021</td>
+                                            <td>36</td>
+                                            <td>118 KG</td>
+                                            <td>89 BPM</td>
+                                            <td>37.9 KG/M² </td>
+                                            <td><a href="#" class="btn btn-sm botoes">Detalhes</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td>23/03/2021</td>
+                                            <td>36</td>
+                                            <td>120 KG</td>
+                                            <td>89 BPM</td>
+                                            <td>39.6 KG/M² </td>
+                                            <td><a href="#" class="btn btn-sm botoes">Detalhes</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td>23/02/2021</td>
+                                            <td>36</td>
+                                            <td>122 KG</td>
+                                            <td>87 BPM</td>
+                                            <td>39.6 KG/M² </td>
+                                            <td><a href="#" class="btn btn-sm botoes">Detalhes</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td>23/01/2021</td>
+                                            <td>36</td>
+                                            <td>120 KG</td>
+                                            <td>82 BPM</td>
+                                            <td>39.6 KG/M² </td>
+                                            <td><a href="#" class="btn btn-sm botoes">Detalhes</a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <a href="#" class="btn btn-block botoes">Registrar novo acompanhamento</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>

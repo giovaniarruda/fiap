@@ -1,0 +1,81 @@
+body {
+    background: rgb(156,152,237);
+    background: linear-gradient(114deg, rgba(156,152,237,1) 0%, rgba(197,154,243,1) 87%); 
+    color: rgb(100,100,100);
+}
+
+.conteudo{
+    height: 100vh;
+}
+.botoes{
+    background-color: rgb(210, 152, 237);
+    color:rgb(255,255,255)  
+}
+.botoes:hover{
+    background-color: rgb(156,152,237);
+    color:rgb(255,255,255)  
+}
+.margem {
+    margin-left: 8px;
+}
+.form-check-input:checked{
+    background-color: rgb(210, 152, 237);
+    border:none;
+}
+a{
+    color: rgb(156,152,237);
+}
+a:hover{
+    
+    color: rgb(210, 152, 237);
+}
+
+.ativo{
+    color: rgb(210, 152, 237);
+}
+
+.dashboard {
+    color: rgb(255, 255, 255);
+}
+
+.titulos{
+    color: rgb(100,100,100);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 90px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    z-index: 99;
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        top: 11.5rem;
+        padding: 0;
+    }
+}
+    
+.navbar {
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .1);
+}
+
+@media (min-width: 767.98px) {
+    .navbar {
+        top: 0;
+        position: sticky;
+        z-index: 999;
+    }
+}
+
+.sidebar .nav-link {
+    color: #333;
+}
+
+.sidebar .nav-link.active {
+    color: #0d6efd;
+}

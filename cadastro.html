@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Health Track</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="row conteudo d-flex justify-content-center align-items-center">
+        <div class="col-md-5">
+          <div class="box shadow bg-white p-4">
+            <div class="d-flex justify-content-center">
+              <img src="img/logo.png" border=0>
+            </div>
+            <h1 class="mb-4 text-center fs-1">Health Track</h1>
+            <form class="mb-3">
+              <p><b>Dados pessoais</b></p>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-0" id="nome" placeholder="Nome completo">
+                <label for="nome">Nome completo</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-0" id="nascimento" placeholder="Data de nascimento">
+                <label for="nascimento">Data de nascimento</label>
+              </div>
+              <div class="d-flex justify-content-left">
+                <p>Gênero biológico: </p>
+                <input class="form-check-input margem" type="radio" id="masculino" name="genero" value="M">
+                <label class="form-check-label margem">Masculino</label>
+                <input class="form-check-input margem" type="radio" id="feminino" name="genero" value="F">
+                <label class="form-check-label margem">Feminino</label>
+              </div>
+              <p><b>Dados de acesso</b></p>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-0" id="usuario" placeholder="Usu&aacute;rio">
+                <label for="usuario">Usu&aacute;rio</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-0" id="senha" placeholder="Senha">
+                <label for="senha">Senha</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-0" id="confirma_senha" placeholder="Repita a senha">
+                <label for="confirma_senha">Repita sua senha</label>
+              </div>
+              <div class="d-grid gap-2 mb-3">
+                <button type="button" class="btn botoes btn-lg border-0 rounded-0">
+                  CRIAR CONTA
+                </button>
+                <div class="mb-3 text-right">
+                  Já tem uma conta? 
+                  <a href="index.html" title="Acesse" class="text-decoration-none">
+                    Acesse
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
